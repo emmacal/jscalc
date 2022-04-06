@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title> JavaScript Calc</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+    <link href="./jscalc.css" rel="stylesheet">  
+</head>
+
+<body id="background">
+  <h1>JavaScript Calculator</h1>
+  <div id="backgroundContainer">
+    <div id="gridContainer">
+      <div class="inputContainer">
+          <label class="label">First number</label>
+          <input id="firstNumber" class="input" placeholder="Enter first number here"/>
+          <div id="fnError1" class="hidden">No letters allowed</div>
+          <div id="fnError2" class="hidden">No special characters allowed</div>
+      </div>
+      <div class="inputContainer">
+          <label class="label">Type</label>
+          <select class="input" id="action">
+            <option value="x">x</option>
+            <option value="/">/</option>
+            <option value="-">-</option>
+            <option value="+">+</option>
+      </select>
+      </div>
+      <div class="inputContainer">
+          <label class="label">Second number</label>
+          <input id="secondNumber" class="input" placeholder="Enter second number here"/>
+          <div id="snError1" class="hidden">No letters allowed</div>
+          <div id="snError2" class="hidden">No special characters allowed</div>
+      </div>
+    </div>
+    <div id="gridAnswer">
+      <div id="answerContainer" class="inputContainer">
+         <div id="valueDiv"></div>
+      </div>
+      <div id="historyContainer">
+      </div>
+    </div>
+  </div>
+</div> 
+<div id="buttonContainer">
+        <button id="submit">Calc</button>
+</div>
+<footer>
+    <script src="./jscalc.js"></script>
+</footer>
+</body>
